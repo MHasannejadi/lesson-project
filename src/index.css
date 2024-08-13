@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "vazir";
+  src: url("./assets/font/Vazir.woff") format("woff"),
+    url("./assets/font/Vazir.woff2") format("woff2"),
+    url("./assets/font/Vazir.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  @apply font-vazir;
+  direction: rtl;
+}
+
+.hoverNavbar{
+  @apply hover:bg-white hover:text-black py-6 px-2 transition duration-500
+}

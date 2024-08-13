@@ -1,0 +1,34 @@
+import React from "react";
+import NavbarMobile from "./NavbarMobile";
+
+function Navbar() {
+  return (
+    <div className="border-t-2 border-[#ff9900] bg-[#000]">
+      <div className="w-10/12 mx-auto flex justify-between items-center  text-white">
+        <p className="py-5 text-xl font-bold">گاز کولر</p>
+        <div className="hidden md:flex">
+          <ul className="flex gap-10">
+            <li className="hoverNavbar">
+              <a>تعمیرات</a>
+            </li>
+            <li className="hoverNavbar">
+              <a>فروشگاه</a>
+            </li>
+            <li className="hoverNavbar">
+              <a>قطعات کولر گازی</a>
+            </li>
+            <li className="hoverNavbar">
+              <a>نمایندگی جنرال</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="text-white md:hidden">
+        <NavbarMobile />
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;
