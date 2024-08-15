@@ -12,7 +12,8 @@
 }
 body {
   @apply font-vazir;
-  direction: rtl;
+  /* direction: rtl; */
+  text-align : right;
 }
 
 .hoverNavbar{

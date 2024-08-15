@@ -1,16 +1,25 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Category from './Category'
-
+import React from "react";
+import Navbar from "./Navbar";
+import Category from "./Category";
+import LinkSection from "./LinkSection";
+import repairsData from "./data/repairsData";
 function Main() {
   return (
     <div>
-        <Navbar />
-        <div className='w-10/12 py-5 mx-auto my-10 shadow-lg rounded-md border border-[#efefef]'>
-        <Category />
+      <Navbar />
+      <div className="flex flex-col md:flex-row w-10/12 md:w-11/12 mx-auto gap-4">
+        <div className="md:w-8/12 mx-auto py-5 my-10 shadow-lg rounded-md border border-[#efefef]">
+          <Category />
         </div>
+        <div className="flex flex-col my-10 space-y-10 md:w-4/12"
+        dir="rtl">
+          <LinkSection data={repairsData.bestLink} title="نوشته های تازه" />
+          <LinkSection data={repairsData.categoryLink} title="دسته ها" />
+          <LinkSection data={repairsData.useFullLink} title="لینک های مفید" />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;
