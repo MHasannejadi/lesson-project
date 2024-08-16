@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Category from "./Category";
 import LinkSection from "./LinkSection";
 import repairsData from "./data/repairsData";
+import Footer from "./Footer";
 function Main() {
   return (
     <div>
@@ -18,6 +19,7 @@ function Main() {
           <LinkSection data={repairsData.useFullLink} title="لینک های مفید" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
