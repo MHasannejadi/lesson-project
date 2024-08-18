@@ -21,8 +21,8 @@ function Category() {
             <button className="flex justify-start text-[#0274be]">
               [ادامه مطلب]
             </button>
-            <figure>
-              <img src={data.image} alt="" />
+            <figure className="flex justify-center">
+              <img className="w-full" src={data.image} alt="" />
             </figure>
           </div>
         ))
