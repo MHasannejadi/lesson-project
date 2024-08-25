@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams } from "react-router";
 import repairsData from "./data/repairsData";
 import DetailList from "./DetailList";
@@ -27,11 +26,15 @@ function ProductDetail() {
       </div>
       <div className="space-y-10">
         {product?.details.map((detail) => (
-          <div className="flex flex-col" key={detail.id} id={`section-${detail.id}`}>
+          <div
+            className="flex flex-col"
+            key={detail.id}
+            id={`section-${detail.id}`}
+          >
             <h1 className="font-bold text-2xl">{detail.title}</h1>
             <p className="mt-4">{detail.desc1}</p>
             <figure className="mt-4">
-              <img src={detail.image} alt=''/>
+              <img src={detail.image} alt="" />
             </figure>
             <p className="mt-4">{detail.desc2}</p>
           </div>
