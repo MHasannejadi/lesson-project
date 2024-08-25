@@ -11,7 +11,7 @@ function ProductDetail() {
   return (
     <div className="w-11/12 mx-auto flex flex-col space-y-7">
       <h1 className="font-bold text-2xl">{product.title}</h1>
-      <div className="grid grid-cols-2 border bg-[#F5F5F5] text-[12px] p-2 rounded-md">
+      <div className="grid grid-cols-2 border bg-[#F5F5F5] text-[#888] text-[14px] p-2 rounded-md">
         <span>نویسنده: {product.head.writer} </span>
         <span>تاریخ: {product.head.date} </span>
         <span>تعمیرات:{product.head.repair} </span>
