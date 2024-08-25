@@ -1,6 +1,9 @@
 function Footer() {
   return (
-    <footer className="footer bg-[#353535] p-10 text-white" dir="rtl">
+    <footer
+      className="flex gap-8 items-end bg-[#353535] p-10 text-white"
+      dir="rtl"
+    >
       <aside className="w-full ">
         <div>
           <h4>تماس با ما</h4>
@@ -15,12 +18,12 @@ function Footer() {
           </p>
         </div>
       </aside>
-      <div className="w-full gird gid-col-1 gap-10 md:grid-cols-4 ">
-        <nav className="flex flex-col">
-          <h6 className="footer-title">شرکت</h6>
-          <a className="link link-hover">درباره ما</a>
-          <a className="link link-hover">تماس با ما</a>
-          <a className="link link-hover">موقعیت های شغلی</a>
+      <div className="w-full flex flex-col gap-10 h-full justify-between">
+        <h4>لینک‌ها</h4>
+        <nav className="flex flex-col gap-2">
+          <a className="cursor-pointer">درباره ما</a>
+          <a className="cursor-pointer">تماس با ما</a>
+          <a className="cursor-pointer">موقعیت های شغلی</a>
         </nav>
       </div>
     </footer>
