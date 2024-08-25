@@ -1,10 +1,10 @@
 function Footer() {
   return (
     <footer
-      className="flex gap-8 items-end bg-[#353535] p-10 text-white"
+      className="flex flex-col sm:flex-row gap-8 items-end bg-[#353535] p-10 text-white"
       dir="rtl"
     >
-      <aside className="w-full ">
+      <aside className="w-full">
         <div>
           <h4>تماس با ما</h4>
           <br />

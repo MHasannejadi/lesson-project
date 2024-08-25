@@ -38,7 +38,7 @@ function DetailList({ list }) {
             className="menu absolute left-0 right-0 top-11 z-100 bg-white p-2 h-fit rounded-md w-full shadow text-black border-gray-500"
           >
             {list.map((item) => (
-              <li onClick={handleClick} key={item.id} className="border-b-2 last:border-0 p-1">
+              <li onClick={handleClick} key={item.id} className="border-b-2 last:border-0 p-3">
                 <a href={`#section-${item.id}`}>{item.title}</a>
               </li>
             ))}
