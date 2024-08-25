@@ -14,9 +14,8 @@ body {
   @apply font-vazir scroll-smooth;
   /* direction: rtl; */
   text-align : right;
-  
 }
 
 .hoverNavbar{
-  @apply hover:bg-white hover:text-black py-6 px-2 transition duration-500
+  @apply hover:bg-white hover:text-black py-6 px-2 transition duration-500 cursor-pointer
 }

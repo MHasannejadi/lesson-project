@@ -1,9 +1,8 @@
-import React from "react";
 import { FaBars } from "react-icons/fa";
 
 function NavbarMobile() {
   return (
-    <div className="bg-[#1D2933] w-full relative">
+    <div className="bg-[#F5F5F5] w-full relative">
       <div className="w-10/12 mx-auto flex justify-between items-center py-1">
         <span>منو</span>
         <details className="dropdown ">

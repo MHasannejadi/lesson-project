@@ -9,5 +9,5 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui" ,'@tailwindcss/line-clamp')]
+  // plugins: [require("daisyui" ,'@tailwindcss/line-clamp')]
 };
