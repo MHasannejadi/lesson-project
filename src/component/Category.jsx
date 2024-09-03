@@ -19,7 +19,7 @@ function Category() {
             to={`/product-detail/${data.id}`}
             className="flex justify-start text-[#0274be]"
           >
-            [ادامه مطلب]
+            ادامه مطلب
           </Link>
           <figure className="flex justify-center !mb-10">
             <img className="w-full" src={data.image} alt="" />
